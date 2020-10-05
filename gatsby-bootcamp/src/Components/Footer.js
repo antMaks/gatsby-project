@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import footerStyles from "/Users/mac/Desktop/gatsby-project/gatsby-project/gatsby-bootcamp/src/Components/footer.module.scss"
+import footerStyles from "./footer.module.scss"
 
 
 const Footer = () => {

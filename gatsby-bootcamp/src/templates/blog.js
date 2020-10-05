@@ -29,14 +29,14 @@ import Layout from "../Components/layout"
 //   }
 // `
 
-export const query = graphql`
-  query($ourMeet: String!) {
-      allContentfulBlogPostAboutMyLove(ourMeet: {eq: $ourMeet}) {
-            kristina
-            publishedDate(formatString: "MMMM Do, YYYY")
-      }
-    }
-`
+// export const query = graphql`
+//   query($ourMeet: String!) {
+//       allContentfulBlogPostAboutMyLove(ourMeet: {eq: $ourMeet}) {
+//             kristina
+//             publishedDate(formatString: "MMMM Do, YYYY")
+//       }
+//     }
+// `
 
 const Blog = props => {
   return (

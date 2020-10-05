@@ -1,0 +1,23 @@
+[
+    {
+      "kristina": "Vintage Purple Tee",
+      "slug": "vintage-purple-tee",
+      "price": "$10.00",
+      "ourMeet": "1",
+      "publishedDate": "2018-06-02"
+    },
+    {
+        "kristina": "Vintage Purple Tee 2",
+        "slug": "vintage-purple-tee-2",
+        "price": "$10.00",
+        "ourMeet": "2",
+        "publishedDate": "2019-06-02"
+    },
+    {
+        "kristina": "Vintage Purple Tee 3",
+        "slug": "vintage-purple-tee-3",
+        "price": "$10.00",
+        "ourMeet": "3",
+        "publishedDate": "2020-06-02"
+    }
+  ]

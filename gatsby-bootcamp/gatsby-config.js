@@ -11,21 +11,21 @@ module.exports = {
     author: "Ant Maks"
   },
   plugins: [
-    {
-      resolve: "gatsby-source-contentful",
-      options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
-      }
-    },
+    // {
+    //   resolve: "gatsby-source-contentful",
+    //   options: {
+    //     spaceId: process.env.CONTENTFUL_SPACE_ID,
+    //     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+    //   }
+    // },
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "src",
-        path: `${__dirname}/src/`
+        path: './data/'
       }
     },
+    "gatsby-transformer-json",
     "gatsby-plugin-sharp",
     {
       resolve: "gatsby-transformer-remark",
