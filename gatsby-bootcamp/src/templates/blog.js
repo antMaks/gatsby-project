@@ -15,18 +15,27 @@ import Layout from "../Components/layout"
 //   }
 // `
 
+// export const query = graphql`
+//   query {
+//     allContentfulBlogPostAboutMyLove {
+//       edges {
+//         node {
+//           kristina
+//           ourMeet
+//           publishedDate(formatString: "MMMM Do, YYYY")
+//         }
+//       }
+//     }
+//   }
+// `
+
 export const query = graphql`
-  query {
-    allContentfulBlogPostAboutMyLove {
-      edges {
-        node {
-          kristina
-          ourMeet
-          publishedDate(formatString: "MMMM Do, YYYY")
-        }
+  query($ourMeet: String!) {
+      allContentfulBlogPostAboutMyLove(ourMeet: {eq: $ourMeet}) {
+            kristina
+            publishedDate(formatString: "MMMM Do, YYYY")
       }
     }
-  }
 `
 
 const Blog = props => {
